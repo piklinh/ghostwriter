@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Stories from './Stories';
 
 import prompts from './prompts';
 import firebase from './firebase';
@@ -15,6 +16,7 @@ class App extends Component {
       // Holds array of input and current quote
       liveStory: [],
 
+      // Empty string to hold story input from handleChange
       storyInput: '',
 
     }
@@ -39,8 +41,6 @@ class App extends Component {
         newState.push(data[key]);
         console.log(data[key]);
       }
-
-      console.log(newState);
 
       this.setState({
         liveStory: newState
@@ -67,29 +67,26 @@ class App extends Component {
   handleClick = (event) => {
     event.preventDefault();
 
-    if (this.state.storyInput.trum() === "") {
-      alert("You haven't shared your dark secrets with us!")
+    // if (this.state.storyInput.trim() === "") {
+    //   alert("You haven't shared your dark secrets with us!")
       
       const dbRef = firebase.database().ref();
 
-      // TO DO: Need to put current prompt and storyinput and push it into the database
-      // TO DO: Display the information on the lower section
-      // Able to push them now that 
-
+      // User input and selected story prompt are stored in a variable
       const storyPrompt = {
         selectedPrompt: prompts[this.state.number].plot,
         selectedInput: this.state.storyInput
       }
 
-      console.log(storyPrompt);
+      // The variable is pushed into the Firebase database
       dbRef.push(storyPrompt);
 
       this.setState({
         storyInput: ''
       })
-    }
-  }
-
+    // }
+  }  
+  
   render() {
     return (
       <div className="App">
@@ -110,23 +107,29 @@ class App extends Component {
             <div className="storyInput">
               <p>Share your dark tale with us</p>
               <form action="">
-                <label htmlFor="newStory">Share your dark tale with us</label>
-                <input 
-                  aria-hidden="true"
-                  type="text" 
+                <label aria-label="Share your dark tale with us" htmlFor="newStory"></label>
+                <textarea
                   name="newStory" 
-                  id="newStory" 
+                  id="newStory"
+                  cols="70"
+                  rows="10"
+                  maxlength="500"
+                  placeholder="It was a dark and stormy night..."
                   onChange={this.handleChange} 
                   value={this.state.storyInput}
                 />
                 <button onClick={this.handleClick}>Submit</button>
               </form>
+
+              <p>{500 - this.state.storyInput.length} characters left</p>
             </div>
           </div>
         </header>
         
         <div className="wrapper displayStory">
           <ul>
+            <Stories />
+            
             {this.state.liveStory.map((input, index) => {
               return (
                 <li key={index}>
