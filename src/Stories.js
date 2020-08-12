@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Stories = ( props ) => {
-
-    console.log(props);
     
     return (
         <div>

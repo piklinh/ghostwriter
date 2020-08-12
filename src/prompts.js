@@ -50,8 +50,8 @@ const prompts = [
 
     {
         number: 9,
-        plot: "It is perched on a branch, not far from my window, watching with an unfathomable black eye.",
-        author: "The Raven"
+        plot: "I was lying in bed with my foot dangling over the edge. I felt a hand grabbed my foot.",
+        author: "James P. Sullivan"
     },
 
     {

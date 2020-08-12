@@ -40,7 +40,6 @@ class App extends Component {
 
       for (let key in data) {
         newState.push(data[key]);
-        console.log(data[key]);
       }
 
       this.setState({
@@ -68,9 +67,11 @@ class App extends Component {
   handleClick = (event) => {
     event.preventDefault();
 
-    // if (this.state.storyInput.trim() === "") {
-    //   alert("You haven't shared your dark secrets with us!")
-      
+    // Error handling, to prompt alert when white space is entered to the text area
+    if (this.state.storyInput.trim() === "") {
+      alert("You haven't shared your dark secrets with us!")
+
+    } else {
       const dbRef = firebase.database().ref();
 
       // User input and selected story prompt are stored in a variable
@@ -85,14 +86,15 @@ class App extends Component {
       this.setState({
         storyInput: ''
       })
-    // }
+    }
   }  
   
   render() {
     return (
       <div className="App">
 
-        <header>
+        {/* Header */}
+        <header >
           <div className="wrapper">
 
             <div className="headerContainer">
@@ -105,19 +107,26 @@ class App extends Component {
                   <img src={image} alt="Cute ghost with a pencil"/>
               </div>
             </div>
-          
+          </div>
+        </header>
+
+        {/* Main Section */}
+        <main className="wrapper">
+
+            {/* Prompt Section */}
 
             <div className="promptEntry">
               <div className="generatePrompt">
                 <h3 className="prompt">{prompts[this.state.number].plot}</h3>
                 <h3 className="author">{prompts[this.state.number].author}</h3>
-                <button onClick={this.handleGenerate}>Generate a prompt</button>
               </div>
+              <button nameClass="promptButton" onClick={this.handleGenerate}>Generate a prompt</button>
             </div>
 
+            {/* Story Input Section */}
             <div className="storyInput">
               <p>Share your dark tale with us</p>
-              <form action="">
+              <form action="submit">
                 <label aria-label="Share your dark tale with us" htmlFor="newStory"></label>
                 <textarea
                   name="newStory" 
@@ -129,25 +138,40 @@ class App extends Component {
                   onChange={this.handleChange} 
                   value={this.state.storyInput}
                 />
-                <button onClick={this.handleClick}>Submit</button>
+                <button nameClass="submitButton" onClick={this.handleClick}>Submit</button>
               </form>
 
-              <p>{500 - this.state.storyInput.length} characters left</p>
+              <p className="characterLength">{500 - this.state.storyInput.length} characters left</p>
             </div>
-          
+      
+            {/* Display Section */}
+            <div className="displayStory">
+              <ul className="permaPost storyPost">
+                <li>
+                  <h4>It is perched on a branch, not far from my window, watching with an unfathomable black eye.</h4>
+                  <p>Once upon a midnight dreary, while I pondered, weak and weary,
+                      Over many a quaint and curious volume of forgotten lore—
+                      While I nodded, nearly napping, suddenly there came a tapping,
+                      As of some one gently rapping, rapping at my chamber door.
+                      “’Tis some visitor,” I muttered, “tapping at my chamber door—
+                      Only this and nothing more.” - Edgar Allan Poe"</p>
+                  <button className="deleteButton">X</button>
+                </li>
 
-          </div>
-        </header>
+                <Stories 
+                  displayStory = { this.state.liveStory }
+                />
+              </ul>
+            </div>
+
+        </main>
+        {/* End of Main Section */}
         
-        <div className="wrapper displayStory">
-          <ul>
-            <Stories 
-              displayStory = { this.state.liveStory }
-            />
-          </ul>
-
-        </div>
+        <footer className="wrapper">
+          <p>Developed by Pik Lin | Image from Freepik</p>
+        </footer>
       </div>
+      // End of App Section
     );
   }
 }
