@@ -50,7 +50,7 @@ const prompts = [
 
     {
         number: 9,
-        plot: "I was lying in bed with my foot dangling over the edge. I felt a hand grabbed my foot.",
+        plot: "I was lying in bed with my foot dangling over the edge. I felt a hand grab my foot.",
         author: "James P. Sullivan"
     },
 

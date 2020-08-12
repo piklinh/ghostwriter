@@ -4,8 +4,8 @@ import Stories from './Stories';
 import prompts from './prompts';
 import firebase from './firebase';
 
-import image from './ghost-01.png';
-import './App.css';
+import image from './assets/ghost-01.png';
+import './app.scss';
 
 class App extends Component {
   constructor() {
@@ -20,6 +20,8 @@ class App extends Component {
       // Empty string to hold story input from handleChange
       storyInput: '',
 
+      // Emptry string to hold story id from handleRemove
+      storyId: ''
     }
   }
 
@@ -39,21 +41,32 @@ class App extends Component {
       const newState = [];
 
       for (let key in data) {
-        newState.push(data[key]);
+
+        // Create new Object to contain the response and key to be looped through
+        const newObject = data[key];
+
+        // Attach new property 'id' into the object = newObject
+        newObject['id'] = key;
+
+        // Push newObject into empty newState array
+        newState.push(newObject);
       }
 
+      // Set the state of liveStory to newState and update the DOM dynamically
       this.setState({
         liveStory: newState
       })
     });
   }
 
+  // Function to generate random prompts from the prompt module
   generateRandomNumber = () => {
     this.setState({
       number: (Math.floor(Math.random() * 30))
     });
   }
 
+  // Click handler to generate prompt when button is clicked
   handleGenerate = () => {
     this.generateRandomNumber();
   }
@@ -68,6 +81,7 @@ class App extends Component {
     event.preventDefault();
 
     // Error handling, to prompt alert when white space is entered to the text area
+    // Else push user Input and selected prompt to Firebase
     if (this.state.storyInput.trim() === "") {
       alert("You haven't shared your dark secrets with us!")
 
@@ -80,7 +94,6 @@ class App extends Component {
         selectedInput: this.state.storyInput
       }
 
-      // The variable is pushed into the Firebase database
       dbRef.push(storyPrompt);
 
       this.setState({
@@ -89,9 +102,20 @@ class App extends Component {
     }
   }  
   
+  // Handle function to delete posted stories, it passed to the child component in the display section
+  handleRemove = (storyId) => {
+    const dbRef = firebase.database().ref();
+
+    dbRef.child(storyId).remove();
+
+    this.setState({
+        storyId: ''
+    })
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className="app">
 
         {/* Header */}
         <header >
@@ -109,6 +133,7 @@ class App extends Component {
             </div>
           </div>
         </header>
+        {/* End of Header  */}
 
         {/* Main Section */}
         <main className="wrapper">
@@ -120,7 +145,7 @@ class App extends Component {
                 <h3 className="prompt">{prompts[this.state.number].plot}</h3>
                 <h3 className="author">{prompts[this.state.number].author}</h3>
               </div>
-              <button nameClass="promptButton" onClick={this.handleGenerate}>Generate a prompt</button>
+              <button className="promptButton" onClick={this.handleGenerate}>Generate a prompt</button>
             </div>
 
             {/* Story Input Section */}
@@ -138,37 +163,27 @@ class App extends Component {
                   onChange={this.handleChange} 
                   value={this.state.storyInput}
                 />
-                <button nameClass="submitButton" onClick={this.handleClick}>Submit</button>
+                <button className="submitButton" onClick={this.handleClick}>Submit</button>
               </form>
 
               <p className="characterLength">{500 - this.state.storyInput.length} characters left</p>
             </div>
-      
+            
             {/* Display Section */}
             <div className="displayStory">
-              <ul>
-                <li className="storyPost">
-                  <h4>It is perched on a branch, not far from my window, watching with an unfathomable black eye.</h4>
-                  <p>Once upon a midnight dreary, while I pondered, weak and weary,
-                      Over many a quaint and curious volume of forgotten lore—
-                      While I nodded, nearly napping, suddenly there came a tapping,
-                      As of some one gently rapping, rapping at my chamber door.
-                      “’Tis some visitor,” I muttered, “tapping at my chamber door—
-                      Only this and nothing more.” - Edgar Allan Poe"</p>
-                  <button className="deleteButton">X</button>
-                </li>
 
                 <Stories 
                   displayStory = { this.state.liveStory }
+                  handleRemove = { this.handleRemove }
                 />
-              </ul>
+
             </div>
 
         </main>
         {/* End of Main Section */}
         
         <footer className="wrapper">
-          <p>Developed by Pik Lin | Image from Freepik</p>
+          <p>Developed by Pik Lin | Image from <a href="https://www.freepik.com/">Freepik</a></p>
         </footer>
       </div>
       // End of App Section

@@ -1,0 +1,162 @@
+/* Header */
+
+header {
+    margin-bottom: 150px;
+  }
+  
+  .headerContainer {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 100px;
+  }
+  
+  .titleContainer {
+    width: 60%;
+    z-index: 10;
+  }
+  
+  .imageContainer {
+    width: 40%;
+  }
+  
+  img {
+    width: 70%;
+    animation: fadeinout 8s infinite;
+    opacity: 0;
+  }
+  
+  @keyframes fadeinout {
+    50% { opacity: 1; }
+  }
+  
+  /* Main: Prompt Section */
+  
+  .promptEntry {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  
+  .generatePrompt {
+    background-color: $primaryColor;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  
+  .prompt {
+    text-align: left;
+  }
+  
+  .author {
+    text-align: right;
+  }
+  
+  h3:first-child {
+    padding-bottom: 30px;
+  }
+  
+  button.promptButton {
+    margin: auto;
+  }
+
+  /* Main: Story Input Section */
+  
+  .storyInput p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .characterLength {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    background-color: $primaryColor;
+    font-size: 2rem;
+    font-family: 'Courier Prime', monospace;
+  }
+  
+  ::placeholder {
+    font-size: 2rem;
+    font-family: 'Courier Prime', monospace;
+  }
+  
+  .submitButton {
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Display Story Section */
+  
+  .displayStory {
+    margin-top: 100px;
+  }
+  
+  .storyPost {
+    background-color: #DCD6F7;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  h4 {
+    color: #222222;
+    padding-bottom: 50px;
+    border-bottom: 10px solid #222222;
+  }
+  
+  li p {
+    padding: 50px 0;
+    color: #222222;
+  }
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  li {
+    width: calc(100% / 2 - 50px);
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .placeholderText {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  p.placeholderText {
+    color: white;
+  }
+  
+  /* Delete Button */
+  
+  button.deleteButton {
+    color: #222222;
+    font-size: 4rem;
+    position: absolute;
+    background-color: #DCD6F7;
+    left: 95%;
+    bottom: 95%;
+    border: 2px solid #222222;
+    border-radius: 50%;
+    padding: 5px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  
+  /* Footer */
+  footer p {
+    text-align: center;
+    padding: 20px 0;
+  }
