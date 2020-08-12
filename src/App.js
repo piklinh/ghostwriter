@@ -4,6 +4,7 @@ import Stories from './Stories';
 import prompts from './prompts';
 import firebase from './firebase';
 
+import image from './ghost-01.png';
 import './App.css';
 
 class App extends Component {
@@ -93,15 +94,25 @@ class App extends Component {
 
         <header>
           <div className="wrapper">
-            <h1>Ghostwriter</h1>
-            <h2>Let your inner spirit guide you</h2>
-          </div>
 
-          <div className="storyEntry">
-            <div className="generatePrompt">
-              <div className="prompt">{prompts[this.state.number].plot}</div>
-              <div className="author">{prompts[this.state.number].author}</div>
-              <button onClick={this.handleGenerate}>Generate a prompt</button>
+            <div className="headerContainer">
+              <div className="titleContainer">
+                <h1>Ghostwriter</h1>
+                <h2>Let your inner spirit guide you</h2>
+              </div>
+              
+              <div className="imageContainer">
+                  <img src={image} alt="Cute ghost with a pencil"/>
+              </div>
+            </div>
+          
+
+            <div className="promptEntry">
+              <div className="generatePrompt">
+                <h3 className="prompt">{prompts[this.state.number].plot}</h3>
+                <h3 className="author">{prompts[this.state.number].author}</h3>
+                <button onClick={this.handleGenerate}>Generate a prompt</button>
+              </div>
             </div>
 
             <div className="storyInput">
@@ -113,7 +124,7 @@ class App extends Component {
                   id="newStory"
                   cols="70"
                   rows="10"
-                  maxlength="500"
+                  maxLength="500"
                   placeholder="It was a dark and stormy night..."
                   onChange={this.handleChange} 
                   value={this.state.storyInput}
@@ -123,21 +134,16 @@ class App extends Component {
 
               <p>{500 - this.state.storyInput.length} characters left</p>
             </div>
+          
+
           </div>
         </header>
         
         <div className="wrapper displayStory">
           <ul>
-            <Stories />
-            
-            {this.state.liveStory.map((input, index) => {
-              return (
-                <li key={index}>
-                  <p>{input.selectedPrompt}</p>
-                  <p>{input.selectedInput}</p>
-                </li>
-              )
-            })}
+            <Stories 
+              displayStory = { this.state.liveStory }
+            />
           </ul>
 
         </div>
