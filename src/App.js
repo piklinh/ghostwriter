@@ -146,8 +146,8 @@ class App extends Component {
       
             {/* Display Section */}
             <div className="displayStory">
-              <ul className="permaPost storyPost">
-                <li>
+              <ul>
+                <li className="storyPost">
                   <h4>It is perched on a branch, not far from my window, watching with an unfathomable black eye.</h4>
                   <p>Once upon a midnight dreary, while I pondered, weak and weary,
                       Over many a quaint and curious volume of forgotten lore—

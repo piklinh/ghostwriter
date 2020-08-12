@@ -203,24 +203,49 @@ textarea {
 
 /* Display Story Section */
 
-.permaPost {
-  background-color: #DCD6F7;
-  padding: 10px;
+.displayStory {
+  margin-top: 100px;
 }
 
-/* ul {
-  display: flex;
-} */
+.storyPost {
+  background-color: #DCD6F7;
+  padding: 50px;
+  border-radius: 10px;
+}
 
-/* li {
-  width: calc(100% / 2);
+h4 {
+  color: #222222;
+  padding-bottom: 50px;
+  border-bottom: 10px solid #222222;
+}
+
+li p {
+  padding-top: 50px;
+  color: #222222;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  justify-content: space-between;
+  width: calc(100% / 2 - 50px);
   position: relative;
-} */
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
 
 /* Delete Button */
 
-/* button.deleteButton {
+button.deleteButton {
+  color: #222222;
+  position: absolute;
+  background-color: #DCD6F7;
+  left: 97%;
+  bottom: 90%;
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
   width: auto;
-} */
+}
