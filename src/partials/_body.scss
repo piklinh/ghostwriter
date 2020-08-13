@@ -237,13 +237,6 @@ header {
         h2 {
             font-size: 2rem;
         }
-    }
-
-    /* Itsy bitsy phone */
-    @media (max-width: 320px) {
-        header {
-            margin-bottom: 100px;
-        }
 
         h3,
         h4,
@@ -264,5 +257,13 @@ header {
         button.deleteButton {
             left: 85%;
             bottom: 95%;
+        }
+
+    }
+
+    /* Itsy bitsy phone */
+    @media (max-width: 320px) {
+        header {
+            margin-bottom: 100px;
         }
     }
