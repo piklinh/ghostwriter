@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/piklinHoeProjectFive/static/css/main.0f326296.chunk.css",
+    "main.css": "/piklinHoeProjectFive/static/css/main.aba4473e.chunk.css",
     "main.js": "/piklinHoeProjectFive/static/js/main.6fc35417.chunk.js",
     "main.js.map": "/piklinHoeProjectFive/static/js/main.6fc35417.chunk.js.map",
     "runtime-main.js": "/piklinHoeProjectFive/static/js/runtime-main.338235ce.js",
@@ -8,9 +8,9 @@
     "static/js/2.cdc31cf2.chunk.js": "/piklinHoeProjectFive/static/js/2.cdc31cf2.chunk.js",
     "static/js/2.cdc31cf2.chunk.js.map": "/piklinHoeProjectFive/static/js/2.cdc31cf2.chunk.js.map",
     "index.html": "/piklinHoeProjectFive/index.html",
-    "precache-manifest.c7ed1b66cc4a2b1b4f7734db30af2905.js": "/piklinHoeProjectFive/precache-manifest.c7ed1b66cc4a2b1b4f7734db30af2905.js",
+    "precache-manifest.95c831f832545d155cf03379fd2a69b0.js": "/piklinHoeProjectFive/precache-manifest.95c831f832545d155cf03379fd2a69b0.js",
     "service-worker.js": "/piklinHoeProjectFive/service-worker.js",
-    "static/css/main.0f326296.chunk.css.map": "/piklinHoeProjectFive/static/css/main.0f326296.chunk.css.map",
+    "static/css/main.aba4473e.chunk.css.map": "/piklinHoeProjectFive/static/css/main.aba4473e.chunk.css.map",
     "static/js/2.cdc31cf2.chunk.js.LICENSE.txt": "/piklinHoeProjectFive/static/js/2.cdc31cf2.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/piklinHoeProjectFive/static/media/blackbgwithsmoke.e7428567.jpg",
     "static/media/ghost-01.png": "/piklinHoeProjectFive/static/media/ghost-01.b82f3ce6.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.338235ce.js",
     "static/js/2.cdc31cf2.chunk.js",
-    "static/css/main.0f326296.chunk.css",
+    "static/css/main.aba4473e.chunk.css",
     "static/js/main.6fc35417.chunk.js"
   ]
 }
