@@ -161,6 +161,7 @@ button.deleteButton {
 footer p {
   text-align: center;
   padding: 20px 0;
+  font-size: 1.5rem;
 }
 
 /* Media Queries */
@@ -198,11 +199,11 @@ footer p {
 
 
   h1 {
-        font-size: 6rem;
+    font-size: 6rem;
   }
 
   h2 {
-        font-size: 3rem;
+    font-size: 3rem;
   }
 
 }
@@ -211,11 +212,11 @@ footer p {
 @media (max-width: 600px) {
 
   h1 {
-        font-size: 5rem;
+    font-size: 5rem;
   }
 
   h2 {
-        font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   h3 {
@@ -226,97 +227,97 @@ footer p {
 
 @media (max-width: 500px) {
 
-    h1 {
-      font-size: 4.5rem;
-    }
+  h1 {
+    font-size: 4.5rem;
+  }
 
-    h2 {
-      font-size: 2rem;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
-    h1 {
-      font-size: 4rem;
-    }
+  h1 {
+    font-size: 4rem;
+  }
 
-    h3 {
+  h3 {
+    font-size: 2rem;
+  }
+
+  button {
       font-size: 2rem;
-    }
+  }
 
-    button {
-        font-size: 2rem;
-    }
+  .headerContainer {
+      display: block;
+      position: relative;
+  }
 
-    .headerContainer {
-        display: block;
-        position: relative;
-    }
+  .titleContainer {
+      position: relative;
+      width: 100%;
+      z-index: 10;
+  }
 
-    .titleContainer {
-        position: relative;
-        width: 100%;
-        z-index: 10;
-    }
+  .imageContainer {
+      position: absolute;
+      left: 50%;
+      bottom: 0%;
+      z-index: inherit;
+  }
 
-    .imageContainer {
-        position: absolute;
-        left: 50%;
-        bottom: 0%;
-        z-index: inherit;
-    }
+  img {
+      width: 80%;
+  }
 
-    img {
-        width: 80%;
-    }
+  .storyInput p,
+  ::placeholder {
+      font-size: 1.4rem;
+  }
 
-    .storyInput p,
-    ::placeholder {
-        font-size: 1.4rem;
-    }
+  .generatePrompt {
+    padding: 20px;
+  }
 
-    .generatePrompt {
-      padding: 20px;
-    }
-
-    button.deleteButton {
-        left: 90%;
-        bottom: 95%;
-    }
+  button.deleteButton {
+      left: 90%;
+      bottom: 95%;
+  }
 
 }
 
 @media (max-width: 360px) {
 
-    h1 {
-      font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 
-    h2 {
-        font-size: 2rem;
-    }
+  h2 {
+      font-size: 2rem;
+  }
 
-    h3,
-    h4,
-    p,
-    button {
-        font-size: 1.6rem;
-    }
+  h3,
+  h4,
+  p,
+  button {
+      font-size: 1.6rem;
+  }
 
-    button.deleteButton {
-        left: 85%;
-    }
+  button.deleteButton {
+      left: 85%;
+  }
 
 }
 
 /* Itsy bitsy phone */
 @media (max-width: 320px) {
 
-    header {
-        margin-bottom: 100px;
-    }
+  header {
+      margin-bottom: 100px;
+  }
 
 }
