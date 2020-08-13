@@ -19,9 +19,7 @@ class App extends Component {
 
       // Empty string to hold story input from handleChange
       storyInput: '',
-
-      // Emptry string to hold story id from handleRemove
-      storyId: ''
+      
     }
   }
 
@@ -104,13 +102,10 @@ class App extends Component {
   
   // Handle function to delete posted stories, it passed to the child component in the display section
   handleRemove = (storyId) => {
-    const dbRef = firebase.database().ref();
 
+    const dbRef = firebase.database().ref();
     dbRef.child(storyId).remove();
 
-    this.setState({
-        storyId: ''
-    })
   }
 
   render() {

@@ -4,102 +4,102 @@ html {
     font-size: 62.5%;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .wrapper {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  button {
-    font-family: $primaryFont;
-    border: none;
-    cursor: pointer;
-    padding: 10px 40px;
-    font-size: 2.5rem;
-    border-radius: 10px;
-    color: $secondaryColor;
-    background-color: $tertiaryColor;
-    border: 2px solid $secondaryColor;
-  }
-  
-  button:hover {
-    background-color: lighten($tertiaryColor, 15);
-  }
-  
-  button:focus {
-    border: 2px solid #857baf;
-  }
-  
-  a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  a:hover {
-      color: #857baf;
-  }
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-  a:focus {
-    text-decoration: underline;
-  }
-  
-  /* General */
-  
-  body {
-    font-family: $primaryFont;
-    color: $secondaryColor;
-  }
-  
-  h1 {
-    font-family: $headerFont;
-    font-size: 8rem;
-    color: $secondaryColor;
-    text-transform: uppercase;
-  }
-  
-  h2 {
-    font-size: 3.2rem;
-    color: $secondaryColor;
-  }
-  
-  h3 {
-    font-size: 3rem;
-    color: $tertiaryColor;
-  }
-  
-  h4 {
-    font-family: $secondaryFont;
-    font-size: 2.5rem;
-    color: $secondaryColor;
-  }
-  
-  p {
-    font-size: 2rem;
-  }
-  
-  .app {
-    background: url(../assets/blackbgwithsmoke.jpg);
-    background-size: cover;
-  }
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: $primaryFont;
+  border: none;
+  cursor: pointer;
+  padding: 10px 40px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: $secondaryColor;
+  background-color: $tertiaryColor;
+  border: 2px solid $secondaryColor;
+}
+
+button:hover {
+  background-color: lighten($tertiaryColor, 15);
+}
+
+button:focus {
+  border: 2px solid #857baf;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+    color: #857baf;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+/* General */
+
+body {
+  font-family: $primaryFont;
+  color: $secondaryColor;
+}
+
+h1 {
+  font-family: $headerFont;
+  font-size: 8rem;
+  color: $secondaryColor;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.2rem;
+  color: $secondaryColor;
+}
+
+h3 {
+  font-size: 3rem;
+  color: $tertiaryColor;
+}
+
+h4 {
+  font-family: $secondaryFont;
+  font-size: 2.5rem;
+  color: $secondaryColor;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.app {
+  background: url(../assets/blackbgwithsmoke.jpg);
+  background-size: cover;
+}
