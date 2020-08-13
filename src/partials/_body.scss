@@ -2,7 +2,7 @@
 
 header {
     margin-bottom: 150px;
-  }
+}
   
   .headerContainer {
     display: flex;
@@ -99,20 +99,20 @@ header {
   }
   
   .storyPost {
-    background-color: #DCD6F7;
+    background-color: $primaryColor;
     padding: 50px;
     border-radius: 10px;
   }
   
   h4 {
-    color: #222222;
+    color: $tertiaryColor;
     padding-bottom: 50px;
-    border-bottom: 10px solid #222222;
+    border-bottom: 10px solid $tertiaryColor;
   }
   
   li p {
     padding: 50px 0;
-    color: #222222;
+    color: $tertiaryColor;
   }
   
   ul {
@@ -128,7 +128,7 @@ header {
   }
   
   .placeholderText {
-    background-color: #222222;
+    background-color: $tertiaryColor;
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
@@ -141,13 +141,13 @@ header {
   /* Delete Button */
   
   button.deleteButton {
-    color: #222222;
+    color: $tertiaryColor;
     font-size: 4rem;
     position: absolute;
-    background-color: #DCD6F7;
+    background-color: $primaryColor;
     left: 95%;
     bottom: 95%;
-    border: 2px solid #222222;
+    border: 2px solid $tertiaryColor;
     border-radius: 50%;
     padding: 5px;
     width: 55px;
@@ -160,3 +160,107 @@ header {
     text-align: center;
     padding: 20px 0;
   }
+
+  /* Media Queries */
+
+    /* Portrait tablet and small desktops */
+    @media (max-width: 940px) {
+
+        .storyPost {
+            padding: 30px;
+        }
+
+        button.deleteButton {
+            left: 90%;
+            bottom: 97%;
+        }
+    }
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 768px) {
+        li {
+            width: 100%;
+        }
+    }
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        button {
+            font-size: 2rem;
+        }
+
+        .headerContainer {
+            display: block;
+            position: relative;
+        }
+
+        .titleContainer {
+            position: relative;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .imageContainer {
+            position: absolute;
+            left: 50%;
+            bottom: 0%;
+            z-index: inherit;
+        }
+
+        img {
+            width: 80%;
+        }
+
+        button.deleteButton {
+            left: 90%;
+            bottom: 95%;
+        }
+    }
+
+    /* Itsy bitsy phone */
+    @media (max-width: 320px) {
+        header {
+            margin-bottom: 100px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3,
+        h4,
+        p,
+        button {
+            font-size: 1.6rem;
+        }
+
+        .generatePrompt {
+            padding: 20px;
+        }
+
+        .storyInput p,
+        ::placeholder {
+            font-size: 1.4rem;
+        }
+
+        button.deleteButton {
+            left: 85%;
+            bottom: 95%;
+        }
+    }
