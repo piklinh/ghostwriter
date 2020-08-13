@@ -56,7 +56,7 @@ const prompts = [
 
     {
         number: 10,
-        plot: "The grandfather clock has been in your family for generations started running backward.",
+        plot: "The grandfather clock that has been in your family for generations started running backward.",
         author: "Alexander Hartdegen"
     },
     
