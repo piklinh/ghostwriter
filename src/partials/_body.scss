@@ -7,7 +7,7 @@ header {
   .headerContainer {
     display: flex;
     align-items: flex-end;
-    padding-top: 100px;
+    padding-top: 150px;
   }
   
   .titleContainer {
@@ -166,35 +166,80 @@ header {
     /* Portrait tablet and small desktops */
     @media (max-width: 940px) {
 
-        .storyPost {
-            padding: 30px;
-        }
+      .storyPost {
+          padding: 30px;
+      }
 
-        button.deleteButton {
-            left: 90%;
-            bottom: 97%;
-        }
+      button.deleteButton {
+          left: 90%;
+          bottom: 97%;
+      }
+      
+    }
+    
+
+    @media (max-width: 860px) {
+
+      li {
+        width: 100%;
+      }
+
+      button.deleteButton {
+        left: 95%;
+        bottom: 95%;
+      }
+
     }
 
     /* Landscape phone to portrait tablet */
     @media (max-width: 768px) {
-        li {
-            width: 100%;
+
+
+      h1 {
+            font-size: 6rem;
+      }
+
+      h2 {
+            font-size: 3rem;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      h1 {
+            font-size: 5rem;
+      }
+
+      h2 {
+            font-size: 2.5rem;
+      }
+
+    }
+
+
+    @media (max-width: 500px) {
+
+        h1 {
+          font-size: 4.5rem;
         }
+
+        h2 {
+          font-size: 2rem;
+        }
+
     }
 
     /* Landscape phones and down */
     @media (max-width: 480px) {
-        h1 {
-            font-size: 4.5rem;
-        }
 
-        h2 {
-            font-size: 3rem;
+        h1 {
+          font-size: 4rem;
         }
 
         h3 {
-            font-size: 2rem;
+          font-size: 2rem;
         }
 
         button {
@@ -223,13 +268,24 @@ header {
             width: 80%;
         }
 
+        .storyInput p,
+        ::placeholder {
+            font-size: 1.4rem;
+        }
+
+        .generatePrompt {
+          padding: 20px;
+        }
+
         button.deleteButton {
             left: 90%;
             bottom: 95%;
         }
+
     }
 
     @media (max-width: 360px) {
+
         h1 {
           font-size: 3rem;
         }
@@ -245,25 +301,17 @@ header {
             font-size: 1.6rem;
         }
 
-        .generatePrompt {
-            padding: 20px;
-        }
-
-        .storyInput p,
-        ::placeholder {
-            font-size: 1.4rem;
-        }
-
         button.deleteButton {
             left: 85%;
-            bottom: 95%;
         }
 
     }
 
     /* Itsy bitsy phone */
     @media (max-width: 320px) {
+
         header {
             margin-bottom: 100px;
         }
+
     }
