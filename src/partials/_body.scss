@@ -80,6 +80,7 @@ textarea {
   background-color: $primaryColor;
   font-size: 2rem;
   font-family: $primaryFont;
+  resize: vertical;
 }
 
 ::placeholder {
@@ -272,6 +273,10 @@ footer p {
 
   img {
       width: 80%;
+  }
+
+  textarea {
+    font-size: 1.6rem;
   }
 
   .storyInput p,
