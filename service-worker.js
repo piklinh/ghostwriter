@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/piklinHoeProjectFive/precache-manifest.b5e836e3f2e02c6fd27ade4ea46efdc2.js"
+  "/piklinHoeProjectFive/precache-manifest.3371565fcea09733611577e2fc63a69f.js"
 );
 
 self.addEventListener('message', (event) => {
