@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84e8974a40ad558dae528adfaf610151",
+    "revision": "7b69812f6750f1c7f0dad5fa216b09f6",
     "url": "/ghostwriter/index.html"
   },
   {
