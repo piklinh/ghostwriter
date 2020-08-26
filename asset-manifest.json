@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/piklinHoeProjectFive/static/css/main.bf614ba0.chunk.css",
-    "main.js": "/piklinHoeProjectFive/static/js/main.ffdcd7c1.chunk.js",
-    "main.js.map": "/piklinHoeProjectFive/static/js/main.ffdcd7c1.chunk.js.map",
-    "runtime-main.js": "/piklinHoeProjectFive/static/js/runtime-main.338235ce.js",
-    "runtime-main.js.map": "/piklinHoeProjectFive/static/js/runtime-main.338235ce.js.map",
-    "static/js/2.cdc31cf2.chunk.js": "/piklinHoeProjectFive/static/js/2.cdc31cf2.chunk.js",
-    "static/js/2.cdc31cf2.chunk.js.map": "/piklinHoeProjectFive/static/js/2.cdc31cf2.chunk.js.map",
-    "index.html": "/piklinHoeProjectFive/index.html",
-    "precache-manifest.3371565fcea09733611577e2fc63a69f.js": "/piklinHoeProjectFive/precache-manifest.3371565fcea09733611577e2fc63a69f.js",
-    "service-worker.js": "/piklinHoeProjectFive/service-worker.js",
-    "static/css/main.bf614ba0.chunk.css.map": "/piklinHoeProjectFive/static/css/main.bf614ba0.chunk.css.map",
-    "static/js/2.cdc31cf2.chunk.js.LICENSE.txt": "/piklinHoeProjectFive/static/js/2.cdc31cf2.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/piklinHoeProjectFive/static/media/blackbgwithsmoke.e7428567.jpg",
-    "static/media/ghost-01.png": "/piklinHoeProjectFive/static/media/ghost-01.b82f3ce6.png"
+    "main.css": "/ghostwriter/static/css/main.b2c9be52.chunk.css",
+    "main.js": "/ghostwriter/static/js/main.6ba33448.chunk.js",
+    "main.js.map": "/ghostwriter/static/js/main.6ba33448.chunk.js.map",
+    "runtime-main.js": "/ghostwriter/static/js/runtime-main.f54d4165.js",
+    "runtime-main.js.map": "/ghostwriter/static/js/runtime-main.f54d4165.js.map",
+    "static/js/2.40bc3fca.chunk.js": "/ghostwriter/static/js/2.40bc3fca.chunk.js",
+    "static/js/2.40bc3fca.chunk.js.map": "/ghostwriter/static/js/2.40bc3fca.chunk.js.map",
+    "index.html": "/ghostwriter/index.html",
+    "precache-manifest.1277c8a9a68820b7a7fa7164525f6bd0.js": "/ghostwriter/precache-manifest.1277c8a9a68820b7a7fa7164525f6bd0.js",
+    "service-worker.js": "/ghostwriter/service-worker.js",
+    "static/css/main.b2c9be52.chunk.css.map": "/ghostwriter/static/css/main.b2c9be52.chunk.css.map",
+    "static/js/2.40bc3fca.chunk.js.LICENSE.txt": "/ghostwriter/static/js/2.40bc3fca.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/ghostwriter/static/media/blackbgwithsmoke.e7428567.jpg",
+    "static/media/ghost-01.png": "/ghostwriter/static/media/ghost-01.b82f3ce6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.338235ce.js",
-    "static/js/2.cdc31cf2.chunk.js",
-    "static/css/main.bf614ba0.chunk.css",
-    "static/js/main.ffdcd7c1.chunk.js"
+    "static/js/runtime-main.f54d4165.js",
+    "static/js/2.40bc3fca.chunk.js",
+    "static/css/main.b2c9be52.chunk.css",
+    "static/js/main.6ba33448.chunk.js"
   ]
 }
