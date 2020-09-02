@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b69812f6750f1c7f0dad5fa216b09f6",
+    "revision": "c2149ccbc10e51b3f73cf9c1bcd93452",
     "url": "/ghostwriter/index.html"
   },
   {
-    "revision": "32a830c08af0ca8e66f5",
-    "url": "/ghostwriter/static/css/main.b2c9be52.chunk.css"
+    "revision": "a47f37efd6b1ca468d76",
+    "url": "/ghostwriter/static/css/main.20ffdb86.chunk.css"
   },
   {
     "revision": "d08d93c52e74c2d655de",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ghostwriter/static/js/2.40bc3fca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "32a830c08af0ca8e66f5",
-    "url": "/ghostwriter/static/js/main.6ba33448.chunk.js"
+    "revision": "a47f37efd6b1ca468d76",
+    "url": "/ghostwriter/static/js/main.93c79f89.chunk.js"
   },
   {
     "revision": "97c0051d6d74977dd3d3",

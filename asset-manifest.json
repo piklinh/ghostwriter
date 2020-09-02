@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ghostwriter/static/css/main.b2c9be52.chunk.css",
-    "main.js": "/ghostwriter/static/js/main.6ba33448.chunk.js",
-    "main.js.map": "/ghostwriter/static/js/main.6ba33448.chunk.js.map",
+    "main.css": "/ghostwriter/static/css/main.20ffdb86.chunk.css",
+    "main.js": "/ghostwriter/static/js/main.93c79f89.chunk.js",
+    "main.js.map": "/ghostwriter/static/js/main.93c79f89.chunk.js.map",
     "runtime-main.js": "/ghostwriter/static/js/runtime-main.f54d4165.js",
     "runtime-main.js.map": "/ghostwriter/static/js/runtime-main.f54d4165.js.map",
     "static/js/2.40bc3fca.chunk.js": "/ghostwriter/static/js/2.40bc3fca.chunk.js",
     "static/js/2.40bc3fca.chunk.js.map": "/ghostwriter/static/js/2.40bc3fca.chunk.js.map",
     "index.html": "/ghostwriter/index.html",
-    "precache-manifest.a3d1ac0e4d204b045d49f1c967d6fc5f.js": "/ghostwriter/precache-manifest.a3d1ac0e4d204b045d49f1c967d6fc5f.js",
+    "precache-manifest.48d4cacd95ed87056e03346c34a64da9.js": "/ghostwriter/precache-manifest.48d4cacd95ed87056e03346c34a64da9.js",
     "service-worker.js": "/ghostwriter/service-worker.js",
-    "static/css/main.b2c9be52.chunk.css.map": "/ghostwriter/static/css/main.b2c9be52.chunk.css.map",
+    "static/css/main.20ffdb86.chunk.css.map": "/ghostwriter/static/css/main.20ffdb86.chunk.css.map",
     "static/js/2.40bc3fca.chunk.js.LICENSE.txt": "/ghostwriter/static/js/2.40bc3fca.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/ghostwriter/static/media/blackbgwithsmoke.e7428567.jpg",
     "static/media/ghost-01.png": "/ghostwriter/static/media/ghost-01.b82f3ce6.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.f54d4165.js",
     "static/js/2.40bc3fca.chunk.js",
-    "static/css/main.b2c9be52.chunk.css",
-    "static/js/main.6ba33448.chunk.js"
+    "static/css/main.20ffdb86.chunk.css",
+    "static/js/main.93c79f89.chunk.js"
   ]
 }
