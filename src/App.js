@@ -5,7 +5,7 @@ import prompts from './prompts';
 import firebase from './firebase';
 
 import image from './assets/ghost-01.png';
-import './app.scss';
+import './styles/app.scss';
 
 class App extends Component {
   constructor() {

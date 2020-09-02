@@ -35,6 +35,4 @@ const Stories = ( props ) => {
     )
 }
 
-
 export default Stories;
-// onClick={() => }
